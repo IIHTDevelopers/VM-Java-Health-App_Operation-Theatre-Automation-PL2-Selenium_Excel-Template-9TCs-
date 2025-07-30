@@ -126,7 +126,7 @@ public class operationTheatre_testcase extends AppTestBase
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "operationTheatreModuleStringVal");
 
-		Assert.assertEquals(operationTheatre_PagesInstance.verifyButtonIsPresentAfterSendValueToSurgenNameTextfield(expectedData),expectedData.get("surgenNameValue2")) ;
+		Assert.assertEquals(operationTheatre_PagesInstance.verifyButtonIsPresentAfterSendValueToSurgenNameTextfield(expectedData),expectedData.get("surgenNameValueOnButton")) ;
 		Assert.assertTrue(locatorsFactoryInstance.verifySurgenNameFirstButtonElementIsPresent(driver).isDisplayed(), "Surgen Name First Button is not present in the current page, Please check manually");
 	}
 
